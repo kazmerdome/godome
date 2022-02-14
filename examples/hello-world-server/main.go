@@ -38,7 +38,7 @@ func main() {
 		true,
 	)
 
-	echoExposure.Start()
+	go echoExposure.Start()
 	defer echoExposure.Stop()
 
 	quit := make(chan os.Signal, 1)
